@@ -17,14 +17,19 @@
 
 <!-- Hotjar Tracking Code for https://wzrd.parcellab.com/ -->
   <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 948988, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+   function init() {
+    Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE/pubhtml",
+    callback: function(data, tabletop) { 
+    console.log(data)
+    },
+    simpleSheet: true } )
+   }
+   window.addEventListener("DOMContentLoaded", init);
+<script>
+$(document).ready(function() {
+$("#tipue_search_input").tipuesearch();
+});
+</script>
   </script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="https://vars.hotjar.com/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><header>
     <nav class="navbar navbar-default" style="display: none;">
     <div class="container">
